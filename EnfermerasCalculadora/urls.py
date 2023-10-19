@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from calculadora.views import Index
+from EnfermerasCalculadora.views import Index
 
 urlpatterns = [
     path('admin/', admin.site.urls),

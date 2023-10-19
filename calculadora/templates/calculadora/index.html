@@ -1,0 +1,14 @@
+{% extends 'calculadora/base.html' %}
+
+{%block content%}
+<div>
+    <div>
+        <h1>Calculadora de costos para cliente</h1>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Calcular</button>
+        </form>
+    </div>
+</div>
+{%endblock content%}
